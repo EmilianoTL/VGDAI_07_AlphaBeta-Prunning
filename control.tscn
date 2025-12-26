@@ -1,0 +1,117 @@
+[gd_scene load_steps=2 format=3 uid="uid://w6ue8aipu2xk"]
+
+[ext_resource type="Script" uid="uid://crlapjekq33p3" path="res://MinMaxSolver.gd" id="1_0fbet"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Table" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0fbet")
+
+[node name="Row0" type="HBoxContainer" parent="Table"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Btn01" type="Button" parent="Table/Row0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Btn02" type="Button" parent="Table/Row0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Btn03" type="Button" parent="Table/Row0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Btn04" type="Button" parent="Table/Row0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Row1" type="HBoxContainer" parent="Table"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Btn11" type="Button" parent="Table/Row1"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Btn12" type="Button" parent="Table/Row1"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Btn13" type="Button" parent="Table/Row1"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Btn14" type="Button" parent="Table/Row1"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Row2" type="HBoxContainer" parent="Table"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Btn21" type="Button" parent="Table/Row2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Btn22" type="Button" parent="Table/Row2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Btn23" type="Button" parent="Table/Row2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Btn24" type="Button" parent="Table/Row2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Row3" type="HBoxContainer" parent="Table"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Btn31" type="Button" parent="Table/Row3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Btn32" type="Button" parent="Table/Row3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Btn33" type="Button" parent="Table/Row3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Btn34" type="Button" parent="Table/Row3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[connection signal="pressed" from="Table/Row0/Btn01" to="Table" method="_on_btn_01_pressed"]
+[connection signal="pressed" from="Table/Row0/Btn02" to="Table" method="_on_btn_02_pressed"]
+[connection signal="pressed" from="Table/Row0/Btn03" to="Table" method="_on_btn_03_pressed"]
+[connection signal="pressed" from="Table/Row0/Btn04" to="Table" method="_on_btn_04_pressed"]
+[connection signal="pressed" from="Table/Row1/Btn11" to="Table" method="_on_btn_11_pressed"]
+[connection signal="pressed" from="Table/Row1/Btn12" to="Table" method="_on_btn_12_pressed"]
+[connection signal="pressed" from="Table/Row1/Btn13" to="Table" method="_on_btn_13_pressed"]
+[connection signal="pressed" from="Table/Row1/Btn14" to="Table" method="_on_btn_14_pressed"]
+[connection signal="pressed" from="Table/Row2/Btn21" to="Table" method="_on_btn_21_pressed"]
+[connection signal="pressed" from="Table/Row2/Btn22" to="Table" method="_on_btn_22_pressed"]
+[connection signal="pressed" from="Table/Row2/Btn23" to="Table" method="_on_btn_23_pressed"]
+[connection signal="pressed" from="Table/Row2/Btn24" to="Table" method="_on_btn_24_pressed"]
+[connection signal="pressed" from="Table/Row3/Btn31" to="Table" method="_on_btn_31_pressed"]
+[connection signal="pressed" from="Table/Row3/Btn32" to="Table" method="_on_btn_32_pressed"]
+[connection signal="pressed" from="Table/Row3/Btn33" to="Table" method="_on_btn_33_pressed"]
+[connection signal="pressed" from="Table/Row3/Btn34" to="Table" method="_on_btn_34_pressed"]
